@@ -4,12 +4,18 @@
   "version": "1.0",
   "description": "Sends the current Upwork job link to a Telegram bot.",
   "permissions": ["activeTab","scripting"],
-  "background": {
-    "service_worker": "background.js"
-  },
+
   "action": {
 
     "default_title": "Send to Telegram"
     
-  }
+  },
+  "content_scripts" :[
+    {
+      "matches": ["https://www.upwork.com/*"],
+      "js": ["content_script.js"]
+    }
+  ]
+
+  
 }
