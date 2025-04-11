@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Job to Telegram",
+  "version": "1.0",
+  "description": "Sends the current Upwork job link to a Telegram bot.",
+  "permissions": ["activeTab","scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+
+    "default_title": "Send to Telegram"
+    
+  }
+}
